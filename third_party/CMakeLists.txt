@@ -71,6 +71,7 @@ if(VELOX_ENABLE_ARROW)
     PREFIX ${ARROW_PREFIX}
     URL "https://dlcdn.apache.org/arrow/arrow-8.0.0/apache-arrow-8.0.0.tar.gz"
     SOURCE_SUBDIR cpp
+    TLS_VERIFY false
     CMAKE_ARGS ${ARROW_CMAKE_ARGS}
     BUILD_BYPRODUCTS ${ARROW_LIBDIR}/libarrow.a ${ARROW_LIBDIR}/libparquet.a
                      ${THRIFT_LIB})
